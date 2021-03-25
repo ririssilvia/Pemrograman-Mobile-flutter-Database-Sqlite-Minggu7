@@ -1,4 +1,4 @@
-# prakti6
+# Praktikum 6 (Week 7)
 
 A new Flutter project.
 
@@ -14,3 +14,26 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+<li><b>Nama  : Riris Silvia Zahri
+<li><b>Kelas : MI 2A
+<li><b>NIM   : 1931710085
+
+
+
+# Hasil Dari Praktikum6 
+
+## Tampilan Halaman Home
+![plot](./image/1.png)
+<br>
+
+## Tampilan Halaman jika ditambah item
+![plot](./image/2.png)
+<br>
+
+## Tampilan Halaman Home setelah ditambah item
+![plot](./image/3.png)
+<br>
+
+# Hasil Dari Tugas Praktikum 6
+
