@@ -52,4 +52,18 @@ Tampilan Halaman ketika item sudah di edit<br>
 ![plot](./image/6.png)
 <br>
 
+## Hasil Dari Tugas1
+
+Tampilan Halaman Home sebelum item di edit<br>
+![plot](./image/4.png)
+<br>
+
+Tampilan Halaman merubah item nama dan klik button save<br>
+![plot](./image/5.png)
+<br>
+
+Tampilan Halaman ketika item sudah di edit<br>
+![plot](./image/6.png)
+<br>
+
 
