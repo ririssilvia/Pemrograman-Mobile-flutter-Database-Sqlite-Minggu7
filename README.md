@@ -22,35 +22,23 @@ samples, guidance on mobile development, and a full API reference.
 
 
 # Hasil Dari Praktikum6 
-## 
-Tampilan Halaman Home<br>
+Tampilan Halaman Home<br><li>
 ![plot](./image/1.png)
 <br>
 
 ## 
  
-Tampilan Halaman jika ditambah item<br>
+Tampilan Halaman jika ditambah item<br><li>
 ![plot](./image/2.png)
 <br>
 
 ## 
-Tampilan Halaman Home setelah ditambah item<br>
+<li>Tampilan Halaman Home setelah ditambah item<br><li>
 ![plot](./image/3.png)
 <br>
 
 # Hasil Dari Tugas 
 ## Hasil Dari Tugas1
-<!-- 
 
-![plot](./image/1.png)
-<br>
-
-## Tampilan Halaman jika ditambah item
-![plot](./image/2.png)
-<br>
-
-## Tampilan Halaman Home setelah ditambah item
-![plot](./image/3.png)
-<br> -->
 
 
