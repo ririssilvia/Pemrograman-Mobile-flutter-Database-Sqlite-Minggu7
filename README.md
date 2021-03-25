@@ -22,8 +22,25 @@ samples, guidance on mobile development, and a full API reference.
 
 
 # Hasil Dari Praktikum6 
+## 
+Tampilan Halaman Home
+![plot](./image/1.png)
+<br>
 
-## Tampilan Halaman Home
+##  
+Tampilan Halaman jika ditambah item
+![plot](./image/2.png)
+<br>
+
+## 
+Tampilan Halaman Home setelah ditambah item
+![plot](./image/3.png)
+<br>
+
+# Hasil Dari Tugas 
+## Hasil Dari Tugas1
+<!-- 
+
 ![plot](./image/1.png)
 <br>
 
@@ -33,7 +50,6 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Tampilan Halaman Home setelah ditambah item
 ![plot](./image/3.png)
-<br>
+<br> -->
 
-# Hasil Dari Tugas Praktikum 6
 
