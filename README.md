@@ -52,18 +52,18 @@ Tampilan Halaman ketika item sudah di edit<br>
 ![plot](./image/6.png)
 <br>
 
-## Hasil Dari Tugas1
+## Hasil Dari Tugas2
 
-Tampilan Halaman Home sebelum item di edit<br>
-![plot](./image/4.png)
+Tampilan Halaman Ubah setelah di tambahkan variabel Kode Barang dan stok<br>
+![plot](./image/7.png)
 <br>
 
-Tampilan Halaman merubah item nama dan klik button save<br>
-![plot](./image/5.png)
+add item dan isi semua textform kemudian diklik button save<br>
+![plot](./image/8.png)
 <br>
 
-Tampilan Halaman ketika item sudah di edit<br>
-![plot](./image/6.png)
+Tampilan Halaman ketika item sudah di tambahkan dengan variabel baru <br>
+![plot](./image/9.png)
 <br>
 
 
