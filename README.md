@@ -22,23 +22,34 @@ samples, guidance on mobile development, and a full API reference.
 
 
 # Hasil Dari Praktikum6 
-Tampilan Halaman Home<br><li>
+Tampilan Halaman Home<br>
 ![plot](./image/1.png)
 <br>
 
 ## 
  
-Tampilan Halaman jika ditambah item<br><li>
+Tampilan Halaman jika ditambah item maka harus memasukan Textform dan klik button save<br>
 ![plot](./image/2.png)
 <br>
 
 ## 
-<li>Tampilan Halaman Home setelah ditambah item<br><li>
+Tampilan Halaman Home setelah ditambah item<br>
 ![plot](./image/3.png)
 <br>
 
 # Hasil Dari Tugas 
 ## Hasil Dari Tugas1
 
+Tampilan Halaman Home sebelum item di edit<br>
+![plot](./image/4.png)
+<br>
+
+Tampilan Halaman merubah item nama dan klik button save<br>
+![plot](./image/5.png)
+<br>
+
+Tampilan Halaman ketika item sudah di edit<br>
+![plot](./image/6.png)
+<br>
 
 
