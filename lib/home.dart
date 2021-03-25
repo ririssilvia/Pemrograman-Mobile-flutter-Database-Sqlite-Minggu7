@@ -73,11 +73,44 @@ class HomeState extends State<Home> {
               backgroundColor: Colors.red,
               child: Icon(Icons.ad_units),
             ),
-            title: Text(
-              this.itemList[index].name,
-              style: textStyle,
+            title: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                  Container(
+                  child: Text(
+                    this.itemList[index].kodeBarang,
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
+              ],
             ),
-            subtitle: Text(this.itemList[index].price.toString()),
+               subtitle: Row(
+              children: [
+                Container(
+                  padding: EdgeInsets.only(right: 10),
+                  child: Text(
+                    this.itemList[index].name,
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                        ),
+                  ),
+                ),
+               Container(
+                  padding: EdgeInsets.only(top: 5),
+                  child: Text(
+                    "Rp " + this.itemList[index].price.toString(),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 15, 
+                      ),
+                  ),
+                ),
+              ],
+            ),
             trailing: GestureDetector(
               child: Icon(Icons.delete),
               onTap: () async {

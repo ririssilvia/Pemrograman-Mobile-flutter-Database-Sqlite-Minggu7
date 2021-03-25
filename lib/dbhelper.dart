@@ -13,37 +13,49 @@ class DbHelper {
     Directory directory = await getApplicationDocumentsDirectory();
     String path = directory.path + 'item.db';
 //create, read databases
-    var itemDatabase = openDatabase(path, version: 4, onCreate: _createDb);
-//mengembalikan nilai object sebagai hasil dari fungsinya
+    var itemDatabase = openDatabase(path,
+        version: 6, onCreate: _createDb, onUpgrade: _onUpgrade);
+    //mengembalikan nilai object sebagai hasil dari fungsinya
     return itemDatabase;
   }
 
-//buat tabel baru dengan nama item
+  //buat tabel baru dengan nama item
   void _createDb(Database db, int version) async {
     await db.execute('''
-CREATE TABLE item (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-name TEXT,
-price INTEGER
-)
-''');
+              CREATE TABLE item (
+              id INTEGER PRIMARY KEY AUTOINCREMENT,
+              name TEXT,
+              price INTEGER,
+              stok INTEGER,
+              kodeBarang TEXT
+              )
+              ''');
   }
 
-//select databases
+  Future<FutureOr<void>> _onUpgrade(Database db, int oldVersion, int newVersion) async {
+    if (oldVersion < 5) {
+      await db.execute('''ALTER TABLE item ADD COLUMN stok INTEGER;''');
+    }
+    if (oldVersion < 6) {
+      await db.execute('''ALTER TABLE item ADD COLUMN kodeBarang INTEGER;''');
+    }
+  }
+
+  //select databases
   Future<List<Map<String, dynamic>>> select() async {
     Database db = await this.initDb();
     var mapList = await db.query('item', orderBy: 'name');
     return mapList;
   }
 
-//create databases
+  //create databases
   Future<int> insert(Item object) async {
     Database db = await this.initDb();
     int count = await db.insert('item', object.toMap());
     return count;
   }
 
-//update databases
+  //update databases
   Future<int> update(Item object) async {
     Database db = await this.initDb();
     int count = await db
@@ -51,7 +63,7 @@ price INTEGER
     return count;
   }
 
-//delete databases
+  //delete databases
   Future<int> delete(int id) async {
     Database db = await this.initDb();
     int count = await db.delete('item', where: 'id=?', whereArgs: [id]);
