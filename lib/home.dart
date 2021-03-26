@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+//letak package folder flutter
 import 'package:prakti6/dbhelper.dart';
 import 'package:prakti6/entryform.dart';
 import 'package:sqflite/sqflite.dart';
+//untuk memanggil fungsi yg terdapat di daftar pustaka sqflite
 import 'dart:async';
-import 'item.dart'; //pendukung program asinkron
+import 'item.dart'; 
+//pendukung program asinkron
 
 class Home extends StatefulWidget {
   @override

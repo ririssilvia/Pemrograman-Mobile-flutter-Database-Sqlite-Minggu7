@@ -5,6 +5,7 @@ class Item {
   int _price;
   int _stok;
 
+//getter dan setter (mengambil dan mengisi data kedalam object)
 
 //getter dan setter stok
  int get stok => this._stok;

@@ -12,10 +12,13 @@ class EntryForm extends StatefulWidget {
 class EntryFormState extends State<EntryForm> {
   Item item;
   EntryFormState(this.item);
+
   TextEditingController kodeBarangController = TextEditingController();
   TextEditingController nameController = TextEditingController();
   TextEditingController priceController = TextEditingController();
   TextEditingController stokController = TextEditingController();
+
+  
   @override
   Widget build(BuildContext context) {
     //kondisi

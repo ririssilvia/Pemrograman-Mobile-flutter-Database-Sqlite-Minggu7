@@ -1,9 +1,12 @@
 import 'package:sqflite/sqflite.dart';
+//mendukug pemrograman asinkron
 import 'dart:async';
 import 'dart:io';
+//bekerja pada file dan directory
 import 'package:path_provider/path_provider.dart';
 import 'item.dart';
 
+//kelass Dbhelper
 class DbHelper {
   static DbHelper _dbHelper;
   static Database _database;
@@ -14,7 +17,10 @@ class DbHelper {
     String path = directory.path + 'item.db';
 //create, read databases
     var itemDatabase = openDatabase(path,
-        version: 6, onCreate: _createDb, onUpgrade: _onUpgrade);
+        version: 7, 
+        onCreate: _createDb, 
+        onUpgrade: _onUpgrade
+        );
     //mengembalikan nilai object sebagai hasil dari fungsinya
     return itemDatabase;
   }
@@ -33,10 +39,10 @@ class DbHelper {
   }
 
   Future<FutureOr<void>> _onUpgrade(Database db, int oldVersion, int newVersion) async {
-    if (oldVersion < 5) {
+    if (oldVersion < 8) {
       await db.execute('''ALTER TABLE item ADD COLUMN stok INTEGER;''');
     }
-    if (oldVersion < 6) {
+    if (oldVersion < 9) {
       await db.execute('''ALTER TABLE item ADD COLUMN kodeBarang INTEGER;''');
     }
   }
